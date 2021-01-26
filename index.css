@@ -260,6 +260,10 @@ body:not(.user-is-tabbing) a:focus {
     background: transparent;
 }
 
+.site__text {
+    margin-right: 15px;
+}
+
 .link__text {
     position: relative;
     display: inline-block;
