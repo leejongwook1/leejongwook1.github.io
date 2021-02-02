@@ -1,201 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <!-- Put your site title here -->
+    <title>이종욱 | 대한민국 경기도 화성에 거주하는 웹 개발자.</title>
 
-  <!-- Put your site title here -->
-  <title>
-    이종욱 | 대한민국 경기도 화성에 거주하는 웹 개발자.
-  </title>
+    <meta name="description" content="Add small description of yourslef." />
+    <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+    <meta
+      name="keywords"
+      content="Put your name, skills and some coding keywords"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-  <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
-  <link rel="stylesheet" href="index.css" />
-</head>
+  <body>
+    <!-- ***** Header ***** -->
 
-<body>
+    <header class="header" role="banner" id="top">
+      <div class="row">
+        <nav class="nav" role="navigation">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__text-box row">
+        <div class="header__text">
+          <h1 class="heading-primary">
+            <!-- Replace the following name with your name -->
+            <span>이종욱</span>
+          </h1>
+          <!-- Put a small paragraph about yourself -->
+          <p>대한민국 경기도 화성에 거주하는 웹 개발자.</p>
+          <a href="#contact" class="btn btn--pink">Get in Touch</a>
+        </div>
+      </div>
+    </header>
 
-  <!-- ***** Header ***** -->
+    <main role="main">
+      <!-- ***** Work ***** -->
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+      <section class="work" id="work">
+        <div class="row">
+          <h2>My Work</h2>
+          <div class="work__boxes">
+            <!-- Each div with the work__box class is a project. -->
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>학생과 교수 간 일정 조율 Web Application</h3>
+                <p>
+                  시험일정, 보강일정 등을 학생과 교수가 원활하게 일정을 조율할
+                  수 있도록 돕는 Application.
+                </p>
+                <ul class="work__list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Python</li>
+                  <li>Django</li>
+                  <li>VS Code</li>
+                  <li>jQuery</li>
+                  <li>MySQL</li>
+                  <li>Toast UI</li>
+                </ul>
+
+                <div class="work__links">
+                  <a
+                    href="https://github.com/leejongwook1/Calendar"
+                    title="View Source Code"
+                    target="_blank"
+                    class="link__text"
+                  >
+                    Visit GitHub <span>&rarr;</span>
+                  </a>
+                  <a
+                    href="https://github.com/leejongwook1/Calendar"
+                    title="View Source Code"
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/github.svg"
+                      class="work__code"
+                      alt="GitHub"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img
+                  src="./images/calendar.png"
+                  class="work__image"
+                  alt="Calendar"
+                />
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>React와 Firebase를 활용한 Twitter 웹</h3>
+                <p>
+                  소셜로그인 또는 홈페이지 자체의 로그인 시 자신의 홈페이지에서
+                  글과 사진을 작성할 수 있고, Firebase의 auth, cloud firestore,
+                  storage에 활용하여 실시간데이터 처리와 간편한 데이터 처리로
+                  백엔드를 대체하였다. 또한 React hook의 useState, useEffect를
+                  사용하여 function component를 구현했다.
+                </p>
+                <ul class="work__list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>React</li>
+                  <li>Firebase</li>
+                  <li>VS Code</li>
+                  <li>Git</li>
+                </ul>
+
+                <div class="work__links">
+                  <a
+                    href="https://github.com/leejongwook1.github.io/lwitter"
+                    title="View Site"
+                    target="_blank"
+                    class="link__text site__text"
+                  >
+                    Visit Site
+                  </a>
+                  <a
+                    href="https://github.com/leejongwook1/lwitter"
+                    title="View Source Code"
+                    target="_blank"
+                    class="link__text"
+                  >
+                    Visit GitHub <span>&rarr;</span>
+                  </a>
+                  <a
+                    href="https://github.com/leejongwook1/lwitter"
+                    title="View Source Code"
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/github.svg"
+                      class="work__code"
+                      alt="GitHub"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img
+                  src="./images/lwitter.png"
+                  class="work__image"
+                  alt="Lwitter"
+                />
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>ReactJS로 만든 간단한 영화 앱</h3>
+                <p>
+                  API에서 불러온 영화 데이터를 홈페이지에 뿌려주어, 영화에 대한
+                  정보들을 표시해주는 간단한 영화 앱
+                </p>
+                <ul class="work__list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>VS Code</li>
+                  <li>Git</li>
+                </ul>
+
+                <div class="work__links">
+                  <a
+                    href="https://leejongwook1.github.io/leejongwook_movie_app_2021/#/"
+                    title="View Site"
+                    target="_blank"
+                    class="link__text site__text"
+                  >
+                    Visit Site
+                  </a>
+                  <a
+                    href="https://github.com/leejongwook1/leejongwook_movie_app_2021"
+                    title="View Source Code"
+                    target="_blank"
+                    class="link__text"
+                  >
+                    Visit GitHub <span>&rarr;</span>
+                  </a>
+                  <a
+                    href="https://github.com/leejongwook1/leejongwook_movie_app_2021"
+                    title="View Source Code"
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/github.svg"
+                      class="work__code"
+                      alt="GitHub"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/movie.png" class="work__image" alt="Movie" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***** About ***** -->
+
+      <section class="about" id="about">
+        <div class="row">
+          <h2>About Me</h2>
+          <div class="about__content">
+            <div class="about__text">
+              <!-- Replace the below paragraph with info about yourself -->
+              <p>
+                안녕하세요. 한신대학교 컴퓨터공학부를 졸업예정인 이종욱입니다.
+                사용자와의 원활한 상호작용을 위해 힘쓰고, 협력과 끈기, 책임감을
+                중요시하는 웹 프론트엔드 개발자가 되기 위해 항상 노력하는
+                개발자가 되겠습니다.
+              </p>
+              <!-- Provide a link to your resume -->
+              <a
+                href="https://github.com/leejongwook1/resume"
+                class="btn"
+                target="_blank"
+                >My Resume</a
+              >
+            </div>
+
+            <div class="about__photo-container">
+              <!-- Add a nice photo of yourself -->
+              <img class="about__photo" src="./images/이종욱.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ***** Contact ***** -->
+
+    <section class="contact" id="contact">
+      <div class="row">
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+          <p>
+            저에게 질문을 하시거나 조언을 해주고 싶으십니까? 질문과 조언이
+            아니더라도 다른 용무가 있으십니까? 메일을 보내주신다면 성심성의껏
+            답변 드리겠습니다.
+          </p>
+          <!-- Replace the email with yours -->
+          <a href="mailto:dkfxnqlxmrkt@naver.com" class="btn"
+            >dkfxnqlxmrkt@naver.com</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Footer ***** -->
+
+    <footer role="contentinfo" class="footer">
+      <div class="row">
+        <!-- Update the links to point to your accounts -->
+        <ul class="footer__social-links">
+          <li class="footer__social-link-item">
+            <a
+              href="https://github.com/leejongwook1/My-Profile-README"
+              title="Link to Github Profile"
+            >
+              <img
+                src="./images/github.svg"
+                class="footer__social-image"
+                alt="Github"
+              />
+            </a>
           </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+          <li class="footer__social-link-item">
+            <a
+              href="https://www.facebook.com/profile.php?id=100004459262845"
+              title="Link to Facebook Profile"
+            >
+              <img
+                src="./images/facebook.jpg"
+                class="footer__social-image"
+                alt="Facebook"
+              />
+            </a>
           </li>
         </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>이종욱</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>대한민국 경기도 화성에 거주하는 웹 개발자.</p>
-        <a href="#contact" class="btn btn--pink">Get in Touch</a>
-      </div>
-    </div>
-  </header>
 
-  <main role="main">
-
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
-      <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>학생과 교수 간 일정 조율 Web Application</h3>
-              <p>
-                시험일정, 보강일정 등을 학생과 교수가 원활하게 일정을 조율할 수 있도록 돕는 Application.
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Django</li>
-                <li>VS Code</li>
-                <li>jQuery</li>
-                <li>MySQL</li>
-                <li>Toast UI</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://github.com/leejongwook1/Calendar" title="View Source Code" target="_blank" class="link__text">
-                  Visit GitHub <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/leejongwook1/Calendar" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/calendar.png" class="work__image" alt="Calendar" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>ReactJS로 만든 간단한 영화 앱</h3>
-              <p>
-                API에서 불러온 영화 데이터를 홈페이지에 뿌려주어, 영화에 대한 정보들을 표시해주는 간단한 영화 앱
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>VS Code</li>
-                <li>Git</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://leejongwook1.github.io/leejongwook_movie_app_2021/#/" title="View Site" target="_blank" class="link__text site__text">
-                  Visit Site
-                </a>
-                <a href="https://github.com/leejongwook1/leejongwook_movie_app_2021" title="View Source Code" target="_blank" class="link__text">
-                  Visit GitHub <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/leejongwook1/leejongwook_movie_app_2021" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/movie.png" class="work__image" alt="Calendar" />
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              안녕하세요. 한신대학교 컴퓨터공학부를 졸업예정인 이종욱입니다. 사용자와의 원활한 상호작용을 위해 힘쓰고, 협력과 끈기, 책임감을 중요시하는 웹 프론트엔드 개발자가 되기 위해 항상 노력하는 개발자가 되겠습니다.
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="https://github.com/leejongwook1/resume" class="btn" target="_blank">My Resume</a>
-          </div>
-
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/이종욱.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
+        <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
         <p>
-          저에게 질문을 하시거나 조언을 해주고 싶으십니까? 질문과 조언이 아니더라도 다른 용무가 있으십니까? 메일을 보내주신다면 성심성의껏 답변 드리겠습니다.
+          &copy; 2020 - Template designed & developed by
+          <a href="https://nisar.dev" class="link">Nisar</a>.
         </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:dkfxnqlxmrkt@naver.com" class="btn">dkfxnqlxmrkt@naver.com</a>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://github.com/leejongwook1/My-Profile-README" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://www.facebook.com/profile.php?id=100004459262845" title="Link to Facebook Profile">
-            <img src="./images/facebook.jpg" class="footer__social-image" alt="Facebook">
-          </a>
-        </li>
-      </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
-    </div>
-  </footer>
-
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
-</body>
-
+    <a href="#top" class="back-to-top" title="Back to Top">
+      <img
+        src="./images/arrow-up.svg"
+        alt="Back to Top"
+        class="back-to-top__image"
+      />
+    </a>
+    <script src="./index.js"></script>
+  </body>
 </html>
